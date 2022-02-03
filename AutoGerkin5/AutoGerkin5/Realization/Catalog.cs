@@ -52,21 +52,6 @@ namespace AutoGerkin5
             Thread.Sleep(2000);
         }
 
-
-        //[When(@"User enter on the second page")]
-        //public void WhenUserEnterOnTheSecondPage()
-        //{
-        //    _searchPage.ClickSecondWatches();
-        //}
-
-        //[Then(@"User on second selected page")]
-        //public void ThenUserOnSecondSelectedPage()
-        //{
-        //    IWebElement checkSecondWatchesPage = DriverHolder.driver.FindElement(By.XPath("//h1[contains(.,'Годинник Guess MENS DRESS однотонний срібний класика')]"));
-        //    Assert.Equal("Годинник Guess MENS DRESS однотонний срібний класика", checkSecondWatchesPage.Text);
-        //}
-
-
         [When(@"User click on the Electronic and Technic category")]
         public void WhenUserClickOnTheElectronicAndTechnicCategory()
         {

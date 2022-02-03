@@ -12,19 +12,6 @@ namespace AutoGerkin5
         {
             _driver = DriverHolder.driver;
         }
-        //private IWebElement nikeBrand = DriverHolder.driver.FindElement(By.LinkText("Nike"));        
-        //public IWebElement check_favourite = DriverHolder.driver.FindElement(By.XPath("//h3[contains(.,'Избранное')]"));
-
-        ////https://kasta.ua/product/13331157:675/
-        //public IWebElement checkHeadphones = DriverHolder.driver.FindElement(By.XPath("//h1[contains(.,'Светящиеся детские беспроводные наушники с ушками/с ушами DobraMAMA BT028C синие')]"));
-        ////https://kasta.ua/product/12513963:674/
-        //private IWebElement checkLaptop = DriverHolder.driver.FindElement(By.XPath("//h1[contains(.,'Ноутбук Iron S140 (S140-P50464GWP) Vinga серый')]"));
-        ////https://kasta.ua/product/10508023:613/
-        //private IWebElement checkFirstDress = DriverHolder.driver.FindElement(By.XPath("//h1[contains(.,'Желтое кэжуал платье Yumster')]"));
-        ////https://kasta.ua/product/10508025:615/
-        //private IWebElement checkSecondDress = DriverHolder.driver.FindElement(By.XPath(""));
-        ////https://kasta.ua/product/10508027:621/
-        //private IWebElement checkThrdDress = DriverHolder.driver.FindElement(By.XPath(""));
 
         private IWebElement searchField = DriverHolder.driver.FindElement(By.XPath("//input"));
         private IWebElement profile = DriverHolder.driver.FindElement(By.XPath("//div[4]/div/span"));
