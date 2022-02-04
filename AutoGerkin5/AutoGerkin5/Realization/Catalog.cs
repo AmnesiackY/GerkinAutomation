@@ -44,11 +44,26 @@ namespace AutoGerkin5
             _searchPage.ClickFirstWatches();
         }
 
+        [When(@"User click on filter")]
+        public void WhenUserClickOnFilter()
+        {
+            _searchPage = new SearchPage();
+            _searchPage.ClickFilterWatches();
+        }
+        [When(@"User click filter LedLamps")]
+        public void WhenUserClickFilterLedLamps()
+        {
+            _searchPage = new SearchPage();
+            _searchPage.ClickFilterHeadphones();
+        }
+
+
+
         [Then(@"User on selected watch page")]
         public void ThenUserOnSelectedWatchPage()
         {
-            IWebElement checkFirstWatchesPage = DriverHolder.driver.FindElement(By.XPath("//h1[contains(.,'Годинник Jacques Lemans 1-1907ZC однотонний зелений спортивний')]"));
-            Assert.Equal("Годинник Jacques Lemans 1-1907ZC однотонний зелений спортивний", checkFirstWatchesPage.Text);
+            IWebElement checkFirstWatchesPage = DriverHolder.driver.FindElement(By.XPath("//h1[contains(.,'Годинники WoodenWatch чорний')]"));
+            Assert.Equal("Годинники WoodenWatch чорний", checkFirstWatchesPage.Text);
             Thread.Sleep(2000);
         }
 
@@ -76,14 +91,14 @@ namespace AutoGerkin5
         public void WhenUserEnterInSelectedProduct()
         {
             _searchPage=new SearchPage();
-            _searchPage.ClickHeadphones();
+            _searchPage.ClickLedLamp();
         }
 
         [Then(@"User on selected page")]
         public void ThenUserOnSelectedPage()
         {
-            IWebElement checkHeadphones = DriverHolder.driver.FindElement(By.XPath("//h1[contains(.,'Навушники T1C Black QCY чорні')]"));
-            Assert.Equal("Навушники T1C Black QCY чорні", checkHeadphones.Text);
+            IWebElement checkLedLamp = DriverHolder.driver.FindElement(By.XPath("//h1[contains(.,'Диско-куля лампа для дискотеки Magic Ball світлодіодний світловий ефект (43959900-В) Francesco Marconi чорна')]"));
+            Assert.Equal("Диско-куля лампа для дискотеки Magic Ball світлодіодний світловий ефект (43959900-В) Francesco Marconi чорна", checkLedLamp.Text);
             Thread.Sleep(2000);
         }
     }

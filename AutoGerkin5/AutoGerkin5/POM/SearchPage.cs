@@ -16,7 +16,7 @@ namespace AutoGerkin5
         }
         public void ClickFirstWatches()
         {
-            IWebElement firstWatches = DriverHolder.driver.FindElement(By.XPath("//img[@title='Годинник Jacques Lemans 1-1907ZC однотонний зелений спортивний']"));
+            IWebElement firstWatches = DriverHolder.driver.FindElement(By.XPath("//article[@id='10085540:702']/div/div/div/form/div/a/span/img"));
             firstWatches.Click();
         }
         public void ClickSecondWatches()
@@ -24,10 +24,20 @@ namespace AutoGerkin5
             IWebElement secondWatches = DriverHolder.driver.FindElement(By.XPath("//img[@title='Годинник Guess MENS DRESS однотонний срібний класика']"));
             secondWatches.Click();
         }
-        public void ClickHeadphones()
+        public void ClickLedLamp()
         {
-            IWebElement headphones = DriverHolder.driver.FindElement(By.XPath("//img[@title='Навушники T1C Black QCY чорні']"));
-            headphones.Click();
+            IWebElement LedLamp = DriverHolder.driver.FindElement(By.XPath("//img[@title='Диско-куля лампа для дискотеки Magic Ball світлодіодний світловий ефект (43959900-В) Francesco Marconi чорна']"));
+            LedLamp.Click();
+        }
+        public void ClickFilterWatches()
+        {
+            IWebElement filter = DriverHolder.driver.FindElement(By.XPath("//a[contains(.,'Дерево7')]"));
+            filter.Click();
+        }
+        public void ClickFilterHeadphones()
+        {
+            IWebElement filterheadphones = DriverHolder.driver.FindElement(By.XPath("//a[contains(.,'LED лампа1')]"));
+            filterheadphones.Click();
         }
     }
 }

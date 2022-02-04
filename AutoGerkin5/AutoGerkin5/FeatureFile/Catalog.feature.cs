@@ -132,26 +132,29 @@ this.FeatureBackground();
  testRunner.Then("User on selected page of subcategory", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 15
- testRunner.When("User enter on interested page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("User click on filter", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 16
+ testRunner.And("User enter on interested page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 17
  testRunner.Then("User on selected watch page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="The user wants to buy similar headphones to replace the old ones")]
+        [Xunit.SkippableFactAttribute(DisplayName="The user wants to buy similar LedLamp to replace the old ones")]
         [Xunit.TraitAttribute("FeatureTitle", "Catalog")]
-        [Xunit.TraitAttribute("Description", "The user wants to buy similar headphones to replace the old ones")]
+        [Xunit.TraitAttribute("Description", "The user wants to buy similar LedLamp to replace the old ones")]
         [Xunit.TraitAttribute("Category", "highpriority")]
-        public virtual void TheUserWantsToBuySimilarHeadphonesToReplaceTheOldOnes()
+        public virtual void TheUserWantsToBuySimilarLedLampToReplaceTheOldOnes()
         {
             string[] tagsOfScenario = new string[] {
                     "highpriority"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("The user wants to buy similar headphones to replace the old ones", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 20
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("The user wants to buy similar LedLamp to replace the old ones", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 21
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -174,19 +177,22 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
 this.FeatureBackground();
 #line hidden
-#line 21
+#line 22
  testRunner.When("User click on the Electronic and Technic category", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 22
+#line 23
  testRunner.And("User click on the TV, Audio and Video subcategory", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 23
+#line 24
  testRunner.Then("User on selected subcategory", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 24
- testRunner.When("User enter in selected product", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
 #line 25
+ testRunner.When("User click filter LedLamps", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 26
+ testRunner.And("User enter in selected product", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 27
  testRunner.Then("User on selected page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
