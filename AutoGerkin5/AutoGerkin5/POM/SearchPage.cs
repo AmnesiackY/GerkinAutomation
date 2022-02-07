@@ -16,7 +16,7 @@ namespace AutoGerkin5
         }
         public void ClickFirstWatches()
         {
-            IWebElement firstWatches = DriverHolder.driver.FindElement(By.XPath("//article[@id='10085540:702']/div/div/div/form/div/a/span/img"));
+            IWebElement firstWatches = DriverHolder.driver.FindElement(By.XPath("//article[@id='10085540:702']/div/div/form/div/a/span/img"));
             firstWatches.Click();
         }
         public void ClickSecondWatches()
